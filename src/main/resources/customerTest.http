@@ -1,0 +1,29 @@
+GET http://localhost:80/api/customer
+
+###
+GET http://localhost:80/api/customer/1
+
+###
+POST http://localhost:80/api/customer
+Content-Type: application/json
+
+{
+  "name": "Kimdur",
+  "country": "UZB",
+  "address": "Beruniy 3A",
+  "phone": "+998999999999"
+}
+
+###
+PUT http://localhost:80/api/customer/3
+Content-Type: application/json
+
+{
+  "name": "Someone",
+  "country": "UZB",
+  "address": "Yunus Obod",
+  "phone": "+998900000009"
+}
+
+###
+DELETE http://localhost:80/api/customer/3
